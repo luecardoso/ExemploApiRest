@@ -77,7 +77,7 @@ public class ProdutoService {
 		produtoDto.setId(id);
 		ModelMapper modelMapper = new ModelMapper();
 		Produto produtoToUpdate = modelMapper.map(produtoDto, Produto.class);
-		produtoRepository.save(produtoToUpdate);
+		produtoRepository.update(produtoToUpdate);
 		return produtoDto;
 	}
 	
