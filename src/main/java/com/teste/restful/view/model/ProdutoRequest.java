@@ -1,24 +1,12 @@
-package com.teste.restful.model;
+package com.teste.restful.view.model;
 
-public class ProdutoModel {
+public class ProdutoRequest {
 
-	private Integer id;
 	private String nome;
 	private Integer quantidade;
 	private Double valor;
 	private String descricao;
 	
-	public ProdutoModel() {
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
 	public String getNome() {
 		return nome;
 	}
@@ -53,8 +41,7 @@ public class ProdutoModel {
 
 	@Override
 	public String toString() {
-		return "Produto [id=" + id + ", nome=" + nome + ", quantidade=" + quantidade + ", valor=" + valor
+		return "nome=" + nome + ", quantidade=" + quantidade + ", valor=" + valor
 				+ ", descricao=" + descricao + "]";
 	}
-	
 }
